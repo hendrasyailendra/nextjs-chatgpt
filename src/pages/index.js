@@ -9,7 +9,7 @@ export default function Home() {
 				<Link
 					key={stack.href}
 					href={stack.href}
-					className='w-20 h-20 relative border-2 border-solid m-2 rounded-xl'
+					className={`${stack.hoverClass} w-20 h-20 relative border-2 border-solid m-2 rounded-xl`}
 				>
 					<Image
 						fill
@@ -25,7 +25,7 @@ export default function Home() {
 	return (
 		<div className='h-full flex justify-center items-center flex-col'>
 			<div>What do you need to know</div>
-			<div className='flex'>{renderStacks()}</div>
+			<div className='flex'>{renderStacks('ss')}</div>
 		</div>
 	);
 }
