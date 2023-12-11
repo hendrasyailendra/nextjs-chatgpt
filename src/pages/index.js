@@ -1,6 +1,6 @@
+import stacks from '@/data/stacks.json';
 import Image from 'next/image';
 import Link from 'next/link';
-import stacks from '../data/stacks.json';
 export default function Home() {
 	const renderStacks = () => {
 		return Object.keys(stacks).map((stackKey) => {
