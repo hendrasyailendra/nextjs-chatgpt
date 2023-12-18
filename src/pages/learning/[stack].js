@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from 'react';
 export default function Stack({ stack, stackKey }) {
 	const [messages, setMessages] = useState([]);
 	const chatRef = useRef(null);
+
 	useEffect(() => {
 		chatRef.current.scrollTo(0, chatRef.current.scrollHeight);
 	}, [messages]);
